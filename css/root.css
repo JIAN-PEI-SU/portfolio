@@ -1,0 +1,18 @@
+:root {
+    --main_color: #fef2de;
+    --main_color_s: #eddcd2;
+    --sub_color: #8a6248;
+    --sub_color_s: #f0efeb;
+    --main_txt: #4b4b4b;
+    --mask_bg: rgba(0, 0, 0, 0.5);
+    --border_radius: 0.35em;
+    /* button*/
+    --main_btn: #4ab19b;
+    --main_btn_border: #8fc0b6;
+    --sub_btn: #c4c4c4;
+    --sub_btn_border: #c4c4c4;
+    /* popup */
+    --popup_bg: rgba(196, 196, 196, 0.8);
+    --popup_lists_item_border: rgba(202, 202, 202, 0.75);
+    --popup_lists_txt_border: #4f4f4f;
+}
