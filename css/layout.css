@@ -12,6 +12,9 @@
 }
 
 /* 頁面通用設定 */
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-size: 16px;
@@ -383,6 +386,15 @@ main > section {
     white-space: nowrap;
     will-change: transform;
 }
+
+/* top */
+#goTop {
+    cursor: pointer;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+
 /* keyframes */
 
 @-webkit-keyframes tada {

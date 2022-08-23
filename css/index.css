@@ -99,6 +99,17 @@ nav.active {
     right: 0;
     transition: 0.5s 0.3s;
 }
+nav li a {
+    cursor: pointer;
+}
+nav li:hover {
+    color: var(--sub_color);
+}
+@media screen and (max-width: 600px) {
+    nav {
+        width: 90%;
+    }
+}
 /* 上方橫幅 */
 .banner-blk {
     position: relative;
@@ -282,7 +293,7 @@ nav.active {
     padding: 0 0.5em;
     text-shadow: 0 0 10px var(--main_color_s), 0 0 20px var(--main_color_s), 0 0 40px var(--main_color_s),
         0 0 80px var(--main_color_s), 0 0 160px var(--main_color_s), 0 0 400px var(--main_color_s);
-    -webkit-box-reflect: below -1em linear-gradient(transparent, #0004);
+    -webkit-box-reflect: below -0.9em linear-gradient(transparent, #0004);
 }
 .poa.works-sub > p {
     font-size: 0.9em;
@@ -430,7 +441,7 @@ nav.active {
     }
 }
 
-.contact-blk {
+.portfolio-blk {
     background: url(../images/all-page-bg.jpg);
     background-attachment: fixed;
 }
