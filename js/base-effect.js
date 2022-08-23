@@ -84,5 +84,5 @@ navBtnWorks.addEventListener('click', function () {
 })
 navBtnPortfolio.addEventListener('click', function () {
     navClick()
-    window.scrollTo(0, Portfolio.offsetTop - 100)
+    window.scrollTo(0, portfolio.offsetTop - 100)
 })
