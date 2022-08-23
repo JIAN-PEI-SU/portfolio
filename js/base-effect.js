@@ -50,9 +50,39 @@ document.addEventListener('scroll', function () {
         works.classList.add('sticky')
         progerss = (window.pageYOffset - nothing.offsetTop) / (window.innerHeight * 4)
     }
-    console.log(window.pageYOffset)
-    console.log(works.offsetTop)
-    console.log(progerss)
+    // console.log(window.pageYOffset)
+    // console.log(works.offsetTop)
+    // console.log(progerss)
     let position = (works.scrollWidth - window.innerWidth) * progerss
     works.scrollTo({ left: position })
+})
+
+// TOP鍵
+var goTop = document.querySelector('#goTop')
+
+goTop.addEventListener('click', function () {
+    window.scrollTo(0, 0)
+})
+
+// 錨點
+var navBtnAbout = document.querySelector('.nav-btn.about')
+var navBtnSkills = document.querySelector('.nav-btn.skills')
+var navBtnWorks = document.querySelector('.nav-btn.works')
+var navBtnPortfolio = document.querySelector('.nav-btn.portfolio')
+
+navBtnAbout.addEventListener('click', function () {
+    navClick()
+    window.scrollTo(0, about.offsetTop - 100)
+})
+navBtnSkills.addEventListener('click', function () {
+    navClick()
+    window.scrollTo(0, skills.offsetTop - 100)
+})
+navBtnWorks.addEventListener('click', function () {
+    navClick()
+    window.scrollTo(0, nothing.offsetTop - 100)
+})
+navBtnPortfolio.addEventListener('click', function () {
+    navClick()
+    window.scrollTo(0, Portfolio.offsetTop - 100)
 })
