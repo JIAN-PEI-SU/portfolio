@@ -236,7 +236,7 @@ nav li:hover {
     position: relative;
     display: flex;
     padding: 0;
-    background: #000;
+    background: var(--works_bg);
     flex-wrap: nowrap;
     overflow: hidden;
 }
@@ -273,7 +273,7 @@ nav li:hover {
 .work-noscoll {
     position: relative;
     padding: 0;
-    background: #000;
+    background: var(--works_bg);
     overflow: hidden;
     z-index: -1;
 }
