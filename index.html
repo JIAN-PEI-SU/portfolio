@@ -27,6 +27,7 @@
                 z-index: 9999;
                 transition: 1.5s;
                 transition-delay: 0.5s;
+                pointer-events: none;
             }
             #status {
                 position: fixed;
@@ -47,8 +48,8 @@
                     // 確認整個頁面讀取完畢再將這三個div隱藏起來
                     var status = document.getElementById('status')
                     var preloader = document.getElementById('preloader')
-                    status.setAttribute('style', 'opacity:0')
-                    preloader.setAttribute('style', 'opacity:0')
+                    status.setAttribute('style', 'opacity:0;')
+                    preloader.setAttribute('style', 'opacity:0;')
                 },
                 1000
             )
