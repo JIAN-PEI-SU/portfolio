@@ -85,7 +85,7 @@ main > section {
 }
 @media screen and (max-width: 500px) {
     .title {
-        font-size: calc(2em + var(--size) * 1px);
+        font-size: calc(1.5em + var(--size) * 1px);
     }
 }
 /* 按鈕 */
