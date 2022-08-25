@@ -210,9 +210,8 @@ nav li:hover {
 }
 .skill-icon {
     position: relative;
-    padding: 0.5em;
-    flex: 1;
-    filter: opacity(0.5);
+    width: 20%;
+    padding: 3%;
 }
 .skill-icon > span {
     position: absolute;
@@ -244,6 +243,23 @@ nav li:hover {
     top: 115%;
     visibility: visible;
     transition: 0.3s;
+}
+@media screen and (min-width: 769px) {
+    .skill-icon {
+        flex: 1;
+        padding: 0.5em;
+        filter: opacity(0.5);
+    }
+}
+@media screen and (max-width: 768px) {
+    .skill-icon:hover > span {
+        top: 105%;
+    }
+    .skill-icon:nth-child(6),
+    .skill-icon:nth-child(7),
+    .skill-icon:nth-child(8) {
+        padding-top: 3em;
+    }
 }
 /* 作品集 */
 .work-blk {
