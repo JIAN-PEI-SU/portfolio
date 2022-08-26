@@ -81,12 +81,13 @@ main > section {
     font-size: calc(2em + var(--size) * 1px);
     /* color: var(--main_color_s); */
 }
-.title > p {
-    /* color: var(--color); */
-}
 @media screen and (max-width: 500px) {
     .title {
-        font-size: calc(1.5em + var(--size) * 1px);
+        font-size: 4em;
+        opacity: calc(var(--size) * 0.05);
+    }
+    .title > p {
+        color: var(--color);
     }
 }
 /* 按鈕 */

@@ -273,10 +273,11 @@ nav li:hover {
         position: absolute;
         top: 0;
         left: 0;
+        transform: translateY(25%);
     }
     .about-blk .txt-box {
         width: 100%;
-        margin-top: 3em;
+        margin-top: 1.5em;
     }
 }
 /* 技能 */
@@ -513,7 +514,7 @@ nav li:hover {
     bottom: 0;
     right: 0;
     left: auto;
-    transform: translate(80%, 80%);
+    transform: translate(50%, 80%);
 }
 @media screen and (min-width: 1366px) {
     .works-video {

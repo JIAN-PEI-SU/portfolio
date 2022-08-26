@@ -45,7 +45,6 @@
             window.addEventListener(
                 'load',
                 function () {
-                    // 確認整個頁面讀取完畢再將這三個div隱藏起來
                     var status = document.getElementById('status')
                     var preloader = document.getElementById('preloader')
                     status.setAttribute('style', 'opacity:0;')
@@ -70,7 +69,7 @@
                     enable-background="new 0 0 0 0"
                     xml:space="preserve"
                 >
-                    <rect x="20" y="50" width="4" height="10" fill="#8a7972">
+                    <rect x="35" y="50" width="4" height="10" fill="#8a7972">
                         <animateTransform
                             attributeType="xml"
                             attributeName="transform"
@@ -81,7 +80,7 @@
                             repeatCount="indefinite"
                         />
                     </rect>
-                    <rect x="30" y="50" width="4" height="10" fill="#8a7972">
+                    <rect x="50" y="50" width="4" height="10" fill="#8a7972">
                         <animateTransform
                             attributeType="xml"
                             attributeName="transform"
@@ -92,7 +91,7 @@
                             repeatCount="indefinite"
                         />
                     </rect>
-                    <rect x="40" y="50" width="4" height="10" fill="#8a7972">
+                    <rect x="65" y="50" width="4" height="10" fill="#8a7972">
                         <animateTransform
                             attributeType="xml"
                             attributeName="transform"
@@ -170,14 +169,14 @@
                         <div class="txt-box">
                             <h2 data-text="Hello! I'm Sue. &nbsp">Hello! I'm Sue. &nbsp</h2>
                             <p>
-                                本名<span>簡珮夙</span>
-                                ，就讀台中科技大學-資訊管理系。
+                                我是<span>簡珮夙</span>
+                                ，一個喜歡從程式中得到成就感的人。
                             </p>
                             <p>
-                                從國小時的Scratch製作出簡易粗糙但卻不可思議的互動式小遊戲開始喜歡上寫程式這件事，到後來能完成各式各樣不同類型的網站，利用程式完成專業軟體之功能讓我更加喜愛
-                                coding 這件事，我喜歡上網瀏覽各式網站並從中獲取新知識增進自身能力。
+                                從國小時的Scratch製作出簡易粗糙但卻不可思議的互動式小遊戲開始對寫程式這件事感興趣，到後來能完成各式各樣不同類型的網站且還能利用網頁做出專業軟體中才有的功能，讓我更加喜愛
+                                coding 這件事。
                             </p>
-                            <h3>Coding是工作，也是興趣。</h3>
+                            <h3>CODING 是工作，也是興趣。</h3>
                         </div>
                     </div>
                 </div>
@@ -516,7 +515,7 @@
             <section class="portfolio-blk" id="portfolio">
                 <div class="container">
                     <div class="title" tg-name="size" tg-from="0" tg-to="30" tg-step="1">
-                        <p>Portfolio</p>
+                        <p tg-name="color" tg-from="1" tg-to="3" tg-fillter="2!" tg-map="2:#8a6248">Portfolio</p>
                     </div>
                     <div class="info-content">
                         <p>
