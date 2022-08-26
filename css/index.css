@@ -663,6 +663,7 @@ nav li:hover {
     }
     .portfolio-blk .content:first-child {
         border-bottom: 2px solid #000;
+        padding-top: 0;
     }
     .portfolio-blk .content:last-child {
         padding-bottom: 0;
