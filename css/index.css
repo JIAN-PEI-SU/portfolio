@@ -431,7 +431,7 @@ nav li:hover {
 }
 .works-video {
     position: relative;
-    width: 45em;
+    width: 40em;
     padding-top: 43%;
 }
 .works-video > img {
@@ -467,14 +467,14 @@ nav li:hover {
     margin-right: 1em;
 }
 /* 第二區塊 */
-.bottom-txt .poa.works-title {
+.bottom-txt .poa.works-title.lr-title {
     bottom: 1em;
     left: 0;
     transform: translate(-60%, 0%);
 
     writing-mode: vertical-lr;
 }
-.bottom-txt .poa.works-title > p {
+.bottom-txt .poa.works-title.lr-title > p {
     padding: 0.5em;
 }
 .bottom-txt .poa.works-sub {
@@ -483,7 +483,7 @@ nav li:hover {
 }
 .bottom-txt .poa.works-btn {
     bottom: 7em;
-    right: -0;
+    right: 0;
     transform: translate(-50%, -50%);
 }
 .bottom-txt .poa.works-txt {
@@ -540,14 +540,19 @@ nav li:hover {
     left: auto;
     transform: translate(50%, 80%);
 }
+@media screen and (min-width: 2500px) {
+    .works-video {
+        width: 50vw;
+    }
+}
 @media screen and (min-width: 1366px) {
     .works-video {
-        width: 45vw;
+        width: 60vw;
     }
 }
 @media screen and (max-width: 1024px) {
     .work-scoll {
-        min-width: 1200px;
+        min-width: 1100px;
     }
     .work-noscoll {
         display: flex;
@@ -568,45 +573,22 @@ nav li:hover {
         width: 60vw;
         max-width: 500px;
     }
-    .small-txt .works-video {
-        width: 60vw;
-        max-width: 500px;
-    }
 }
 @media screen and (max-width: 600px) {
     .work-scoll {
-        min-width: 1000px;
+        min-width: 700px;
     }
-    .work-scoll:nth-child(2) {
+    .work-noscoll > .work-scoll:last-child {
         justify-content: flex-start;
+        margin-right: 10em;
     }
-    .work-scoll:nth-child(2) {
-        justify-content: flex-start;
+    .poa.works-title {
+        font-size: 4em;
     }
     .left-txt .poa.works-btn {
         top: 50%;
         left: 0;
         transform: translate(0%, -25%);
-    }
-    .small-txt .works-video {
-        width: 80vw;
-    }
-    /* .work-blk > .work-scoll:last-child {
-        width: auto;
-        min-width: auto;
-    } */
-    .work-noscoll > .work-scoll:last-child {
-        justify-content: flex-start;
-    }
-    .work-noscoll > .work-scoll:last-child {
-        justify-content: flex-start;
-    }
-    .poa.works-title {
-        font-size: 4em;
-    }
-    .small-txt .poa.works-title {
-        top: 20%;
-        transform: translate(-0.5em, -180%);
     }
 }
 /* 聯絡區塊 */
