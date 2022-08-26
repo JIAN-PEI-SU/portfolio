@@ -22,7 +22,7 @@ header.blur .logo-box {
 }
 .logo-box > a {
     display: block;
-    padding: 1em 0;
+    padding: 1em 0 0.5em 0;
 }
 .hamburger {
     position: relative;
@@ -105,7 +105,7 @@ nav li a {
 nav li:hover {
     color: var(--sub_color);
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
     .logo-box {
         max-width: 150px;
     }
@@ -186,23 +186,102 @@ nav li:hover {
     }
 }
 /* 關於我 */
-.about-blk {
+.about-blk .flex {
+    flex-wrap: wrap;
+}
+.about-blk .title {
+    width: 100%;
 }
 .about-blk .pic-box {
-    width: 30%;
+    width: 35%;
+    z-index: 2;
 }
 .about-blk .pic-box > .pic {
     width: 100%;
     padding-top: 100%;
+    overflow: unset;
 }
-.about-blk .pic-box > .pic > img {
-    object-fit: contain;
+.about-blk .pic-box > .pic > svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    width: 100%;
+    height: 100%;
 }
 .about-blk .txt-box {
-    width: 70%;
+    position: relative;
+    width: 65%;
+    padding: 2em;
+    color: #f1f1f1;
+    letter-spacing: 2px;
+    background: var(--works_bg);
+    border-radius: 0.5em;
+}
+@media screen and (min-width: 601px) {
+    .about-blk .txt-box::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 30%;
+        left: 0;
+        border-right: 2em solid var(--works_bg);
+        border-top: 2em solid transparent;
+        border-bottom: 2em solid transparent;
+        transform: translate(-100%, -50%);
+    }
+}
+.about-blk .txt-box h2 {
+    position: relative;
+    display: inline-block;
+    font-size: 3em;
+    font-weight: 400;
+    color: transparent;
+    line-height: 1.3;
+    padding-bottom: 0.25em;
+}
+.about-blk .txt-box h2::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1.3em;
+    color: #fff;
+    white-space: nowrap;
+    border-right: 2px solid #fff;
+    overflow: hidden;
+    animation: textAnimation 8s infinite;
+}
+.about-blk .txt-box h3 {
+    text-align: right;
+    padding-top: 0.5em;
+    font-size: 1.4em;
+    font-weight: 600;
+    line-height: 3;
+    letter-spacing: 5px;
+}
+@media screen and (max-width: 1000px) {
+    .about-blk .flex {
+        align-items: flex-end;
+    }
+}
+@media screen and (max-width: 600px) {
+    .about-blk .pic-box {
+        width: 30%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .about-blk .txt-box {
+        width: 100%;
+        margin-top: 3em;
+    }
 }
 /* 技能 */
 .skills-blk {
+    background: var(--sub_color_s);
 }
 .skills-blk .flex {
     margin: 3em 0;
@@ -210,9 +289,8 @@ nav li:hover {
 }
 .skill-icon {
     position: relative;
-    padding: 0.5em;
-    flex: 1;
-    filter: opacity(0.5);
+    width: 20%;
+    padding: 3%;
 }
 .skill-icon > span {
     position: absolute;
@@ -244,6 +322,23 @@ nav li:hover {
     top: 115%;
     visibility: visible;
     transition: 0.3s;
+}
+@media screen and (min-width: 769px) {
+    .skill-icon {
+        flex: 1;
+        padding: 0.5em;
+        filter: opacity(0.5);
+    }
+}
+@media screen and (max-width: 768px) {
+    .skill-icon:hover > span {
+        top: 105%;
+    }
+    .skill-icon:nth-child(6),
+    .skill-icon:nth-child(7),
+    .skill-icon:nth-child(8) {
+        padding-top: 3em;
+    }
 }
 /* 作品集 */
 .work-blk {
@@ -385,7 +480,7 @@ nav li:hover {
 .small-txt .poa.works-title {
     top: 0;
     left: 0;
-    transform: translate(-10%, -150%);
+    transform: translate(-10%, -120%);
 }
 .small-txt .poa.works-title > p {
     word-break: keep-all;
@@ -407,6 +502,8 @@ nav li:hover {
 }
 .small-txt .works-video {
     width: 30vw;
+    min-width: 30em;
+    padding: 27%;
 }
 .small-txt:first-child {
     align-self: flex-start;
@@ -415,6 +512,7 @@ nav li:hover {
 .small-txt:last-child .poa.works-txt {
     bottom: 0;
     right: 0;
+    left: auto;
     transform: translate(80%, 80%);
 }
 @media screen and (min-width: 1366px) {
@@ -436,16 +534,22 @@ nav li:hover {
 @media screen and (max-width: 768px) {
     .works-video {
         width: 90vw;
-        min-width: 30em;
     }
     .small-txt.sub-small {
         align-self: flex-end;
         margin-bottom: 10%;
     }
+    .small-txt .works-video {
+        width: 60vw;
+        max-width: 500px;
+    }
 }
 @media screen and (max-width: 600px) {
     .work-scoll {
         min-width: 1000px;
+    }
+    .work-scoll:nth-child(2) {
+        justify-content: flex-start;
     }
     .left-txt .poa.works-btn {
         top: 50%;

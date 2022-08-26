@@ -22,6 +22,7 @@ body {
 }
 
 main > section {
+    position: relative;
     padding: 4em 0;
 }
 
@@ -476,5 +477,28 @@ main > section {
     }
     to {
         background-position: 16px 100%;
+    }
+}
+@-webkit-keyframes textAnimation {
+    0%,
+    10%,
+    100% {
+        width: 0%;
+    }
+    70%,
+    90% {
+        width: 100%;
+    }
+}
+
+@keyframes textAnimation {
+    0%,
+    10%,
+    100% {
+        width: 0%;
+    }
+    70%,
+    90% {
+        width: 100%;
     }
 }
