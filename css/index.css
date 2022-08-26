@@ -587,10 +587,10 @@ nav li:hover {
     .small-txt .works-video {
         width: 80vw;
     }
-    .work-blk > .work-scoll:last-child {
+    /* .work-blk > .work-scoll:last-child {
         width: auto;
         min-width: auto;
-    }
+    } */
     .work-noscoll > .work-scoll:last-child {
         justify-content: flex-start;
     }
