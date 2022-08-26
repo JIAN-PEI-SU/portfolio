@@ -215,7 +215,7 @@ nav li:hover {
     padding: 2em;
     color: #f1f1f1;
     letter-spacing: 2px;
-    background: var(--works_bg);
+    background: var(--sub_color);
     border-radius: 0.5em;
 }
 @media screen and (min-width: 601px) {
@@ -226,7 +226,7 @@ nav li:hover {
         height: 0;
         top: 30%;
         left: 0;
-        border-right: 2em solid var(--works_bg);
+        border-right: 2em solid var(--sub_color);
         border-top: 2em solid transparent;
         border-bottom: 2em solid transparent;
         transform: translate(-100%, -50%);
@@ -364,8 +364,8 @@ nav li:hover {
     position: relative;
     display: flex;
     padding: 0;
-    /* background: var(--works_bg); */
-    background: #333;
+    background: var(--works_bg);
+    /* background: #333; */
     flex-wrap: nowrap;
     overflow: hidden;
 }
