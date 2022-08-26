@@ -512,7 +512,7 @@ nav li:hover {
 .small-txt .poa.works-txt {
     bottom: 0;
     left: 0;
-    transform: translate(-80%, 80%);
+    transform: translate(-50%, 80%);
 }
 .small-txt .poa.works-btn {
     bottom: 0;
@@ -605,14 +605,83 @@ nav li:hover {
         transform: translate(-0.5em, -180%);
     }
 }
-
+/* 聯絡區塊 */
 .portfolio-blk {
     background: url(../images/all-page-bg.jpg);
     background-attachment: fixed;
 }
-.info-content {
-    width: 50%;
+.portfolio-blk .container {
+    overflow: hidden;
 }
+.portfolio-blk .container > .flex {
+    align-items: stretch;
+    margin-top: 2em;
+}
+.portfolio-blk .content {
+    width: 50%;
+    padding: 3em;
+}
+.portfolio-blk .sub-title {
+    margin-bottom: 0.5em;
+    font-size: 2em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.portfolio-blk .info svg {
+    width: 2em;
+    height: 2em;
+    vertical-align: middle;
+}
+.portfolio-blk .info a {
+    margin: 0.5em 1em;
+    display: inline-block;
+}
+.portfolio-blk .info a:hover {
+    color: var(--sub_color);
+}
+.portfolio-blk .pic-box.flex {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    margin-top: 3em;
+    overflow: auto;
+}
+/* 捲軸寬度 */
+.portfolio-blk .pic-box.flex::-webkit-scrollbar {
+    width: 0px;
+}
+/* 捲軸背景色 */
+.portfolio-blk .pic-box.flex::-webkit-scrollbar-track {
+    background: none;
+}
+/* 捲軸把手 */
+.portfolio-blk .pic-box.flex::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 99em;
+}
+.portfolio-blk .pic-box > img {
+    width: 40%;
+    margin: 0.5em;
+}
+@media screen and (min-width: 769px) {
+    .portfolio-blk .content:first-child {
+        border-right: 2px solid #000;
+        text-align: right;
+    }
+}
+@media screen and (max-width: 768px) {
+    .portfolio-blk .content {
+        width: 100%;
+        padding: 3em;
+    }
+    .portfolio-blk .content:first-child {
+        border-bottom: 2px solid #000;
+    }
+    .portfolio-blk .content:last-child {
+        padding-bottom: 0;
+    }
+}
+
 /* footer */
 footer {
     color: #fff;
