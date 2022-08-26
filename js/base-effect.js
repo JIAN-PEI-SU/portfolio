@@ -43,12 +43,12 @@ var progerss
 document.addEventListener('scroll', function () {
     if (window.pageYOffset < nothing.offsetTop) {
         progerss = 0
-    } else if (window.pageYOffset > nothing.offsetTop + window.innerHeight * 4) {
+    } else if (window.pageYOffset > nothing.offsetTop + window.innerHeight * 5) {
         progerss = 1
         works.classList.remove('sticky')
     } else {
         works.classList.add('sticky')
-        progerss = (window.pageYOffset - nothing.offsetTop) / (window.innerHeight * 4)
+        progerss = (window.pageYOffset - nothing.offsetTop) / (window.innerHeight * 5)
     }
     // console.log(window.pageYOffset)
     // console.log(works.offsetTop)

@@ -364,7 +364,8 @@ nav li:hover {
     position: relative;
     display: flex;
     padding: 0;
-    background: var(--works_bg);
+    /* background: var(--works_bg); */
+    background: #333;
     flex-wrap: nowrap;
     overflow: hidden;
 }
@@ -469,28 +470,31 @@ nav li:hover {
 .bottom-txt .poa.works-title {
     bottom: 1em;
     left: 0;
+    transform: translate(-60%, 0%);
+
     writing-mode: vertical-lr;
 }
 .bottom-txt .poa.works-title > p {
     padding: 0.5em;
 }
 .bottom-txt .poa.works-sub {
-    left: 10em;
+    left: 1em;
     transform: translateY(25%);
 }
 .bottom-txt .poa.works-btn {
     bottom: 7em;
-    right: -10em;
+    right: -0;
     transform: translate(-50%, -50%);
 }
 .bottom-txt .poa.works-txt {
     bottom: 0;
     right: 0;
-    transform: translate(80%, 25%);
+    transform: translate(0%, 25%);
 }
 .bottom-txt .works-video {
-    margin-top: 15em;
-    margin-left: 10em;
+    margin-right: 15em;
+    margin-left: 1em;
+    margin-top: 10em;
 }
 /* 第三區塊 */
 .work-scoll:nth-child(3) {
