@@ -22,7 +22,7 @@ header.blur .logo-box {
 }
 .logo-box > a {
     display: block;
-    padding: 1em 0 0.5em 0 0.5em 0;
+    padding: 1em 0 0.5em 0;
 }
 .hamburger {
     position: relative;
@@ -377,7 +377,7 @@ nav li:hover {
     position: static !important;
 }
 .work-blk > div:first-child {
-    padding-left: 50%;
+    /* padding-left: 50%; */
 }
 .work-blk > div:last-child {
     padding-right: 0%;
@@ -662,6 +662,7 @@ nav li:hover {
 .portfolio-blk .pic-box > img {
     width: 40%;
     margin: 0.5em;
+    filter: drop-shadow(0px 2px 2px #999);
 }
 @media screen and (min-width: 769px) {
     .portfolio-blk .content:first-child {
