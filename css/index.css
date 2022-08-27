@@ -569,7 +569,7 @@ nav li:hover {
 }
 /* 捲軸寬度 */
 .portfolio-blk .pic-box.flex::-webkit-scrollbar {
-    width: 0px;
+    display: none;
 }
 /* 捲軸背景色 */
 .portfolio-blk .pic-box.flex::-webkit-scrollbar-track {
