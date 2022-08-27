@@ -123,19 +123,6 @@ nav li:hover {
     background: var(--sub_color_s);
     border-radius: 0px 0px calc(-50% + var(--radius) * 1%) calc(-50% + var(--radius) * 1%);
 }
-/* .banner-blk::after {
-    border-radius: calc(-45% + var(--radius) * 1%);
-    content: '';
-    width: 90%;
-    height: 90%;
-    background: var(--sub_color_s);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    z-index: -1;
-    transition: 0.3s;
-} */
 .banner-blk > .flex {
     height: 100%;
     padding-left: 8%;
@@ -283,7 +270,6 @@ nav li:hover {
 /* 技能 */
 .skills-blk {
     background: var(--sub_color_s);
-    background: var(--sub_color_s);
 }
 .skills-blk .flex {
     margin: 3em 0;
@@ -329,24 +315,7 @@ nav li:hover {
     .skill-icon {
         flex: 1;
         padding: 0.5em;
-        filter: opacity(0.5);
-    }
-}
-@media screen and (max-width: 768px) {
-    .skill-icon:hover > span {
-        top: 105%;
-    }
-    .skill-icon:nth-child(6),
-    .skill-icon:nth-child(7),
-    .skill-icon:nth-child(8) {
-        padding-top: 3em;
-    }
-}
-@media screen and (min-width: 769px) {
-    .skill-icon {
-        flex: 1;
-        padding: 0.5em;
-        filter: opacity(0.5);
+        filter: opacity(0.8);
     }
 }
 @media screen and (max-width: 768px) {
@@ -376,12 +345,6 @@ nav li:hover {
 }
 .static {
     position: static !important;
-}
-.work-blk > div:first-child {
-    /* padding-left: 50%; */
-}
-.work-blk > div:last-child {
-    padding-right: 0%;
 }
 .work-scoll {
     width: 100vw;
@@ -413,8 +376,8 @@ nav li:hover {
     color: #fff;
     padding: 0 0.5em;
     text-shadow: 0 0 10px var(--main_color_s), 0 0 20px var(--main_color_s), 0 0 40px var(--main_color_s),
-        0 0 80px var(--main_color_s), 0 0 160px var(--main_color_s), 0 0 400px var(--main_color_s);
-    -webkit-box-reflect: below -0.9em linear-gradient(transparent, #0004);
+        0 0 80px var(--main_color_s), 0 0 160px var(--main_color_s);
+    -webkit-box-reflect: below -0.9em linear-gradient(transparent 45%, #0004);
 }
 .poa.works-sub > p {
     font-size: 0.9em;
@@ -573,10 +536,10 @@ nav li:hover {
 }
 .portfolio-blk .content {
     width: 50%;
-    padding: 3em;
+    padding: 0 3em;
 }
 .portfolio-blk .sub-title {
-    margin-bottom: 0.5em;
+    margin: 1em 0 0.5em 0;
     font-size: 2em;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -631,10 +594,6 @@ nav li:hover {
     }
     .portfolio-blk .content:first-child {
         border-bottom: 2px solid #000;
-        padding-top: 0;
-    }
-    .portfolio-blk .content:last-child {
-        padding-bottom: 0;
     }
 }
 
