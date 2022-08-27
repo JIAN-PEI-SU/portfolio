@@ -166,7 +166,7 @@ nav li:hover {
     }
     .banner-blk .txt-box {
         font-size: 1.2em;
-        padding-top: 5em;
+        padding-top: 2em;
     }
 }
 @media screen and (max-width: 500px) {
@@ -529,6 +529,7 @@ nav li:hover {
 .portfolio-blk {
     background: url(../images/all-page-bg.jpg);
     background-attachment: fixed;
+    overflow: -moz-hidden-unscrollable;
 }
 .portfolio-blk .container {
     overflow: hidden;
