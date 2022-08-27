@@ -1,3 +1,14 @@
+// loading
+window.addEventListener(
+    'load',
+    function () {
+        var status = document.getElementById('status')
+        var preloader = document.getElementById('preloader')
+        status.setAttribute('style', 'opacity:0;')
+        preloader.setAttribute('style', 'opacity:0;')
+    },
+    1500
+)
 // header固定
 var header = document.querySelector('header')
 

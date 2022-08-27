@@ -14,94 +14,17 @@
         <link rel="stylesheet" href="css/layout.css" />
         <!-- 頁面設定 -->
         <link rel="stylesheet" href="css/index.css" />
-        <!-- loading -->
-        <style>
-            #preloader {
-                position: fixed;
-                width: 100%;
-                height: 100%;
-                left: 0%;
-                top: 0%;
-                background-color: var(--main_color_s);
-                opacity: 1;
-                z-index: 9999;
-                transition: 1.5s;
-                transition-delay: 0.5s;
-                pointer-events: none;
-            }
-            #status {
-                position: fixed;
-                width: 7em;
-                height: 7em;
-                left: 50%;
-                top: 50%;
-                opacity: 1;
-                transform: translate(-50%, -50%);
-                transition: 1.5s;
-                transition-delay: 0.5s;
-            }
-        </style>
-        <script>
-            window.addEventListener(
-                'load',
-                function () {
-                    var status = document.getElementById('status')
-                    var preloader = document.getElementById('preloader')
-                    status.setAttribute('style', 'opacity:0;')
-                    preloader.setAttribute('style', 'opacity:0;')
-                },
-                1000
-            )
-        </script>
     </head>
     <body>
         <!-- loading -->
         <div id="preloader">
             <div id="status">
-                <svg
-                    version="1.1"
-                    id="L9"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px"
-                    y="0px"
-                    viewBox="0 0 100 100"
-                    enable-background="new 0 0 0 0"
-                    xml:space="preserve"
-                >
-                    <rect x="35" y="50" width="4" height="10" fill="#8a7972">
-                        <animateTransform
-                            attributeType="xml"
-                            attributeName="transform"
-                            type="translate"
-                            values="0 0; 0 20; 0 0"
-                            begin="0"
-                            dur="0.6s"
-                            repeatCount="indefinite"
-                        />
-                    </rect>
-                    <rect x="50" y="50" width="4" height="10" fill="#8a7972">
-                        <animateTransform
-                            attributeType="xml"
-                            attributeName="transform"
-                            type="translate"
-                            values="0 0; 0 20; 0 0"
-                            begin="0.2s"
-                            dur="0.6s"
-                            repeatCount="indefinite"
-                        />
-                    </rect>
-                    <rect x="65" y="50" width="4" height="10" fill="#8a7972">
-                        <animateTransform
-                            attributeType="xml"
-                            attributeName="transform"
-                            type="translate"
-                            values="0 0; 0 20; 0 0"
-                            begin="0.4s"
-                            dur="0.6s"
-                            repeatCount="indefinite"
-                        />
-                    </rect>
+                <svg id="logo" data-name="loading" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 466.89 217.52">
+                    <path
+                        d="M172.3,96.79s58-44,38-69-102,7-102,7-88,39-77,77,72,41,77,78-74,52-89,35,201-79,201-79-36,34-25,43,81-53,81-53-39,44.53-25,54.26,144-33.26,150-47.26-61-1-51,46,132-38,132-38"
+                        transform="translate(-16.56 -16.24)"
+                        style="fill: none; stroke: #8a7972; stroke-miterlimit: 10; stroke-width: 10px"
+                    />
                 </svg>
             </div>
         </div>
