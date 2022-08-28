@@ -142,7 +142,7 @@ nav li:hover {
 .banner-blk .txt-box p > span {
     display: block;
 }
-@media screen and (min-width: 2500px) {
+@media screen and (min-width: 2000px) {
     .banner-blk .pic-box {
         width: 50%;
     }
@@ -405,7 +405,7 @@ nav li:hover {
     transform: translate(-50%, -50%);
     border-radius: 0.5em;
 }
-@media screen and (min-width: 2500px) {
+@media screen and (min-width: 2000px) {
     .works-video {
         width: 50vw;
     }
@@ -548,6 +548,9 @@ nav li:hover {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
+.portfolio-blk .about {
+    text-align: justify;
+}
 .portfolio-blk .info svg {
     width: 2em;
     height: 2em;
@@ -556,8 +559,6 @@ nav li:hover {
 .portfolio-blk .info a {
     margin: 0.5em 1em;
     display: inline-block;
-}
-.portfolio-blk .info a:hover {
     color: var(--sub_color);
 }
 .portfolio-blk .pic-box.flex {
@@ -595,10 +596,11 @@ nav li:hover {
 @media screen and (max-width: 768px) {
     .portfolio-blk .content {
         width: 100%;
-        padding: 3em;
+        padding: 0 2em;
     }
     .portfolio-blk .content:first-child {
         border-bottom: 2px solid #000;
+        padding-bottom: 2em;
     }
 }
 
