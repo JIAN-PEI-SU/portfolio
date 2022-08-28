@@ -98,4 +98,15 @@ navBtnPortfolio.addEventListener('click', function () {
     window.scrollTo(0, portfolio.offsetTop - 100)
 })
 
+// var navBtn = document.querySelectorAll('.nav-btn')
+
+// for (var i = 0; i < navBtn.length; ++i) {
+//     navBtn[i].addEventListener('click', function () {
+//         navClick()
+//         attr = this.attributes['data-link'].value
+//         console.log(attr)
+//         window.scrollTo(0, attr.offsetTop - 100)
+//     })
+// }
+
 // popup
