@@ -563,7 +563,6 @@ nav li:hover {
 }
 .portfolio-blk .pic-box.flex {
     justify-content: flex-start;
-    align-items: flex-start;
     flex-wrap: nowrap;
     margin-top: 3em;
     overflow: auto;
@@ -586,6 +585,8 @@ nav li:hover {
     width: 40%;
     margin: 0.5em;
     filter: drop-shadow(0px 2px 2px #999);
+    /* 禁止拖曳 */
+    -webkit-user-drag: none;
 }
 @media screen and (min-width: 769px) {
     .portfolio-blk .content:first-child {
@@ -606,10 +607,7 @@ nav li:hover {
 /* footer */
 footer {
     color: #fff;
-    background: #000;
-}
-.copyright {
-    text-align: right;
+    background: var(--works_bg);
 }
 .line-link {
     position: fixed;
@@ -628,4 +626,42 @@ footer {
     display: block;
     width: 60%;
     height: 60%;
+}
+footer .content {
+    text-align: center;
+    padding: 1em 0;
+}
+footer .content > img {
+    filter: invert(1);
+    max-width: 150px;
+}
+footer .content > p {
+    margin: 1em 0;
+    letter-spacing: 2px;
+}
+footer .btn {
+    width: 10em;
+    margin: 0.5em;
+    padding: 0.5em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    border: 1px solid #fff;
+}
+footer .btn svg {
+    fill: #fff;
+    width: 2em;
+    height: 2em;
+    padding-right: 0.5em;
+    margin-right: 0.5em;
+    border-right: 1px solid #fff;
+    vertical-align: bottom;
+}
+footer .btn span {
+    flex: 1;
+}
+footer .copyright {
+    text-align: center;
+    font-size: 12px;
 }

@@ -97,3 +97,5 @@ navBtnPortfolio.addEventListener('click', function () {
     navClick()
     window.scrollTo(0, portfolio.offsetTop - 100)
 })
+
+// popup
