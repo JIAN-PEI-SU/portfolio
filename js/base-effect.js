@@ -76,37 +76,16 @@ goTop.addEventListener('click', function () {
 })
 
 // 錨點
-var navBtnAbout = document.querySelector('.nav-btn.about')
-var navBtnSkills = document.querySelector('.nav-btn.skills')
-var navBtnWorks = document.querySelector('.nav-btn.works')
-var navBtnPortfolio = document.querySelector('.nav-btn.portfolio')
 
-navBtnAbout.addEventListener('click', function () {
-    navClick()
-    window.scrollTo(0, about.offsetTop - 100)
-})
-navBtnSkills.addEventListener('click', function () {
-    navClick()
-    window.scrollTo(0, skills.offsetTop - 100)
-})
-navBtnWorks.addEventListener('click', function () {
-    navClick()
-    window.scrollTo(0, nothing.offsetTop - 100)
-})
-navBtnPortfolio.addEventListener('click', function () {
-    navClick()
-    window.scrollTo(0, portfolio.offsetTop - 100)
-})
+var navBtn = document.querySelectorAll('.nav-btn')
 
-// var navBtn = document.querySelectorAll('.nav-btn')
-
-// for (var i = 0; i < navBtn.length; ++i) {
-//     navBtn[i].addEventListener('click', function () {
-//         navClick()
-//         attr = this.attributes['data-link'].value
-//         console.log(attr)
-//         window.scrollTo(0, attr.offsetTop - 100)
-//     })
-// }
+navBtn.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+        navClick()
+        attr = this.attributes['data-link'].value
+        var link = document.getElementById(attr)
+        window.scrollTo(0, link.offsetTop - 100)
+    })
+})
 
 // popup
