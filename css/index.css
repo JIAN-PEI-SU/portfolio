@@ -388,7 +388,17 @@ nav li:hover {
 }
 .poa.works-txt {
     width: 24em;
-    padding: 2em;
+    padding: 1.5em;
+    text-align: justify;
+    overflow: auto;
+    -ms-overflow-style: none;
+}
+/* 捲軸寬度 */
+.poa.works-txt::-webkit-scrollbar {
+    display: none;
+}
+.poa.works-txt > p + p {
+    padding-top: 1em;
 }
 .works-video {
     position: relative;
@@ -435,6 +445,7 @@ nav li:hover {
         bottom: -2em;
     }
     .poa.works-txt {
+        height: 8em;
         color: #000;
         background: #fff;
         box-shadow: 1px 1px 10px #6d6c6c;
@@ -492,8 +503,10 @@ nav li:hover {
         display: none;
     }
     .work-scoll {
+        width: 95vw;
         height: auto;
         min-width: auto;
+        margin: auto;
         padding: 5em 0;
     }
     .work-noscoll {
@@ -515,6 +528,8 @@ nav li:hover {
         width: 100%;
         background: unset;
         color: #fff;
+        border-left: 5px solid #fff;
+        padding: 1em;
     }
     .poa.works-btn {
         text-align: right;
