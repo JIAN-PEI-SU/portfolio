@@ -61,9 +61,7 @@ document.addEventListener('scroll', function () {
         works.classList.add('sticky')
         progerss = (window.pageYOffset - nothing.offsetTop) / (window.innerHeight * 5)
     }
-    // console.log(window.pageYOffset)
-    // console.log(works.offsetTop)
-    // console.log(progerss)
+
     let position = (works.scrollWidth - window.innerWidth) * progerss
     works.scrollTo({ left: position })
 })
