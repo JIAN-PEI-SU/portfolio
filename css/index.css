@@ -580,21 +580,24 @@ nav li:hover {
     justify-content: flex-start;
     flex-wrap: nowrap;
     margin-top: 3em;
-    overflow: auto;
-    -ms-overflow-style: none;
 }
-/* 捲軸寬度 */
-.portfolio-blk .pic-box.flex::-webkit-scrollbar {
-    display: none;
+.portfolio-blk .swiper {
+    padding-bottom: 3em;
 }
-/* 捲軸背景色 */
-.portfolio-blk .pic-box.flex::-webkit-scrollbar-track {
-    background: none;
+.portfolio-blk .swiper-button-next {
+    right: 10px;
+    left: auto;
+    top: auto;
+    bottom: 0;
+    color: var(--main_txt);
 }
-/* 捲軸把手 */
-.portfolio-blk .pic-box.flex::-webkit-scrollbar-thumb {
-    background: transparent;
-    border-radius: 99em;
+.portfolio-blk .swiper-button-next:after {
+    content: '⇀';
+    font-size: 2em;
+    transition: 0.5s;
+}
+.portfolio-blk .swiper-button-next:hover:after {
+    transform: translateX(10px);
 }
 .portfolio-blk .pic-box > img {
     width: 40%;
@@ -617,6 +620,9 @@ nav li:hover {
     .portfolio-blk .content:first-child {
         border-bottom: 2px solid #000;
         padding-bottom: 2em;
+    }
+    .portfolio-blk .swiper-button-next:after {
+        content: unset;
     }
 }
 /* footer */

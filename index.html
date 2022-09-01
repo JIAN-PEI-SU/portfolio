@@ -52,6 +52,19 @@
                 animation: 1.5s load infinite;
             }
         </style>
+        <script>
+            // loading
+            window.addEventListener(
+                'load',
+                function () {
+                    var status = document.getElementById('status')
+                    var preloader = document.getElementById('preloader')
+                    status.setAttribute('style', 'opacity:0;')
+                    preloader.setAttribute('style', 'opacity:0;')
+                },
+                1500
+            )
+        </script>
     </head>
     <body>
         <!-- loading -->
@@ -104,9 +117,6 @@
                     <div class="txt-box">
                         <p>Looking For <span>Web Developer?</span></p>
                         <p>Check out my portfolio.</p>
-                        <!-- <div class="btn">
-                            <span></span>
-                        </div> -->
                     </div>
                     <div class="pic-box">
                         <img src="images/banner.webp" alt="" />
@@ -570,17 +580,22 @@
                             <p>
                                 前端工作經驗一年，製作約百個網站，包含一頁式活動網站、形象型官網、購物型網站、SEO行銷網站。
                             </p>
-                            <div class="pic-box flex">
-                                <img src="images/p00.webp" alt="" />
-                                <img src="images/p01.webp" alt="" />
-                                <img src="images/p02.webp" alt="" />
-                                <img src="images/p03.webp" alt="" />
-                                <img src="images/p04.webp" alt="" />
-                                <img src="images/p05.webp" alt="" />
-                                <img src="images/p-guest.webp" alt="" />
-                                <img src="images/p-martin.webp" alt="" />
-                                <img src="images/p-passion.webp" alt="" />
-                                <img src="images/p-tea.webp" alt="" />
+
+                            <!-- Slides -->
+                            <div class="swiper">
+                                <div class="pic-box flex swiper-wrapper">
+                                    <div class="swiper-slide"><img src="images/p00.webp" alt="" /></div>
+                                    <div class="swiper-slide"><img src="images/p01.webp" alt="" /></div>
+                                    <div class="swiper-slide"><img src="images/p02.webp" alt="" /></div>
+                                    <div class="swiper-slide"><img src="images/p03.webp" alt="" /></div>
+                                    <div class="swiper-slide"><img src="images/p04.webp" alt="" /></div>
+                                    <div class="swiper-slide"><img src="images/p05.webp" alt="" /></div>
+                                    <div class="swiper-slide"><img src="images/p-guest.webp" alt="" /></div>
+                                    <div class="swiper-slide"><img src="images/p-martin.webp" alt="" /></div>
+                                    <div class="swiper-slide"><img src="images/p-passion.webp" alt="" /></div>
+                                    <div class="swiper-slide"><img src="images/p-tea.webp" alt="" /></div>
+                                </div>
+                                <div class="swiper-button-next"></div>
                             </div>
                         </div>
                     </div>
@@ -624,9 +639,7 @@
                 <div class="copyright">Sue's Portfolio © 2022 Copyright</div>
             </div>
         </footer>
-        <!-- Javascript -->
-        <script src="js/base-effect.js"></script>
-        <script src="js/tg.js"></script>
+
         <!-- svg -->
         <svg class="none">
             <!-- people -->
@@ -735,6 +748,7 @@
                     d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"
                 />
             </symbol>
+            <!-- cv -->
             <symbol id="cv" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                 <path
                     fill-rule="evenodd"
@@ -800,5 +814,12 @@
                 />
             </symbol>
         </svg>
+        <!-- Javascript -->
+        <script src="js/base-effect.js"></script>
+        <!-- tg -->
+        <script src="js/tg.js"></script>
+        <!-- swiper -->
+        <link rel="stylesheet" href="js/swiper/swiper-bundle.min.css" />
+        <script src="js/swiper/swiper-bundle.min.js"></script>
     </body>
 </html>
